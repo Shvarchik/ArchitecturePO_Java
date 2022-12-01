@@ -13,10 +13,10 @@ public class Homework {
         switch (rand.nextInt(2)){
             case 0:
                 salary = (rand.nextInt(61) + 40)*1000;
-                return new Worker(surnames[rand.nextInt(surnames.length)],names[rand.nextInt(surnames.length)], salary);
+                return new Worker(surnames[rand.nextInt(surnames.length)],names[rand.nextInt(names.length)], salary);
             case 1:
                 salary = (rand.nextInt(16) + 5)*100;
-                return new Freelancer(surnames[rand.nextInt(surnames.length)],names[rand.nextInt(surnames.length)], salary);
+                return new Freelancer(surnames[rand.nextInt(surnames.length)],names[rand.nextInt(names.length)], salary);
             default:
                 return  null;
         }
